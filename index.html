@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horrorscope</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerWrapper">
+        <h1 class="heading">HORRORSCOPE</h1>
+
+          <h2 class="calendarPicker__heading">Pick your birthdate:</h2>
+          
+        
+        <input
+            onchange="myfun()"
+            type="date"
+            name="dateOfBirth"
+            id="dateInput"
+          />
+      </div>
+    </header>
+
+    <div id="loader"></div>
+
+    <div class="slideWrapper">
+      <div class="slide__info">
+        <h1 class="slide__sign" id="sign"></h1>
+        <h2 class="slide__headline" id="headline"></h2>
+
+        <p class="slide__description" id="description"></p>
+      </div>
+    </div>
+    <div class="slide__image" id="signImage"></div>
+
+    <script src="./db.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
