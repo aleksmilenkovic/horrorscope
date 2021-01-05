@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horrorscope</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,15 +13,14 @@
       <div class="headerWrapper">
         <h1 class="heading">HORRORSCOPE</h1>
 
-          <h2 class="calendarPicker__heading">Pick your birthdate:</h2>
-          
-        
+        <h2 class="calendarPicker__heading">Pick your birthdate:</h2>
+
         <input
-            onchange="myfun()"
-            type="date"
-            name="dateOfBirth"
-            id="dateInput"
-          />
+          onchange="myfun()"
+          type="date"
+          name="dateOfBirth"
+          id="dateInput"
+        />
       </div>
     </header>
 
@@ -32,8 +33,9 @@
 
         <p class="slide__description" id="description"></p>
       </div>
+      <div class="slide__image" id="signImage"></div>
     </div>
-    <div class="slide__image" id="signImage"></div>
+    
 
     <script src="./db.js"></script>
     <script src="./app.js"></script>

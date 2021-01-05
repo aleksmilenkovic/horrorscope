@@ -1,85 +1,49 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
-  font-size: 10px;
+  font-family: 'Architects Daughter', cursive;
+  /* border: 3px solid black; */
 }
 
 body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-  border: 15px solid black;
-  background-color: burlywood;
-  /* height: 100vh;; */
+  /* border: 3px dotted red; */
 }
 
-.headerWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-  border: 5px solid black;
-  font-size: 8rem;
-  background-color: darkslategray;
-}
-
-.calendarPicker{
-  /* flex-basis: 10%; */
+header {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .calendarPicker__heading {
-  font-size: 6rem;
-  background-color: green;
-}
-
-#dateInput {
-  color: rgb(46, 45, 47);
-  font-size: x-large;
-  /* background-color: rgb(138, 111, 111); */
-  border: 5px solid rgb(26, 14, 14);
-  padding: 15px;
-  border-radius: 5px;
+  display: inline;
 }
 
 .slideWrapper {
-  border: 5px solid black;
-  font-size: 15rem;
-  background-color: deepskyblue;
-  flex-basis: 50%;
+  /* border: 3px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  padding-top: 2%;
 }
 
-.slide__sign {
-  border: 5px solid black;
-  font-size: 10rem;
-  margin: 10px;
-  padding: 10px;
+.slide__info {
+  /* border: 3px dotted red; */
+  flex-basis: 40%;
+  text-align: center;
+  font-size: xx-large;
+  align-self: flex-start;
 }
 
-.slide__headline {
-  border: 5px solid black;
-  font-size: 5rem;
-  margin: 10px;
-  padding: 10px;
-}
+.slide__image {
+  border: 3px dotted green;
+  margin-top: 3%;
 
-.slide__description {
-  border: 5px solid black;
-  font-size: 3rem;
-  margin: 10px;
-  padding: 10px;
+
 }
 
 .slide__image img {
-  border: 5px solid black;
-  /* width:200px; */
-  flex-basis: 50%;
-  flex-shrink: 1;
+  /* display: block; */
+  width: 100%;
+  flex-grow: 2;
 }
 
 /* Center the loader */
