@@ -1,12 +1,8 @@
 function myfun() {
   var myDate = document.getElementById("dateInput");
-  console.log("changed: " + myDate.value);
   var dateValue = myDate.value.slice(5);
-  console.log(dateValue);
   var days = dateValue.slice(3);
-  console.log(days);
   var month = dateValue.slice(0, 2);
-  console.log(month);
   var loader = document.getElementById("loader");
   var sign = document.getElementById("sign");
   var image = document.getElementById("signImage");
